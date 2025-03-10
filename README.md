@@ -34,7 +34,7 @@ recipe-app-api/
 │   ├── recipe/               # Recipe application logic (serializers, views, etc.)
 │   ├── user/                 # User application logic (serializers, views, etc.)
 │   ├── manage.py             # Django management script
-│   └── ...
+│   └── .flake8               # Linting checking tool configuration
 ├── proxy/                    # Nginx proxy configuration
 │   ├── Dockerfile            # Dockerfile for the Nginx proxy
 │   ├── default.conf.tpl      # Nginx configuration template
@@ -69,13 +69,13 @@ recipe-app-api/
 1.  **Clone the repository:**
 
     ```bash
-    git clone <repository-url>
+    git clone https://github.com/Zahkklm/recipe-app-api
     cd recipe-app-api
     ```
 
 2.  **Create a `.env` file:**
 
-    Copy the contents of `.env.sample` to a new file named `.env` and modify the variables as needed.
+    Copy the contents of `.env.sample` to a new file named `.env` and modify the variables as needed. Change the configurations according to your project.
 
     ```bash
     cp .env.sample .env
@@ -101,7 +101,7 @@ recipe-app-api/
 
 2.  **Configure environment variables:**
 
-    Set the environment variables in your AWS environment (e.g., using AWS Systems Manager Parameter Store or EC2 instance environment variables).  Ensure the variables match those used in #file:docker-compose-deploy.yml.
+    Set the environment variables in your AWS environment (e.g., using AWS Systems Manager Parameter Store or EC2 instance environment variables).  Ensure the variables match those used in docker-compose-deploy.yml.
 
 3.  **Copy the project files to the EC2 instance:**
 
