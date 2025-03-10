@@ -21,7 +21,7 @@ This project is a Recipe API built using Django REST Framework. It allows users 
 *   **drf-spectacular:** An auto-schema generation tool for Django REST Framework.
 *   **Docker:** A platform for developing, shipping, and running applications in containers.
 *   **Nginx:** A high-performance web server and reverse proxy.
-*   **Uwsgi:** A deployment option for Django applications.
+*   **uWSGI:** A fast WSGI server implementation, alternative to Gunicorn.
 *   **AWS:** Cloud platform for deployment.
 
 ## Project Structure
