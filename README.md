@@ -101,7 +101,7 @@ recipe-app-api/
 
 2.  **Configure environment variables:**
 
-    Set the environment variables in your AWS environment (e.g., using AWS Systems Manager Parameter Store or EC2 instance environment variables).  Ensure the variables match those used in docker-compose-deploy.yml.
+    Set the environment variables in your AWS environment (e.g., using AWS Systems Manager Parameter Store or EC2 instance environment variables).  Ensure the variables match those used in [docker-compose-deploy.yml](docker-compose-deploy.yml).
 
 3.  **Copy the project files to the EC2 instance:**
 
@@ -119,4 +119,4 @@ recipe-app-api/
 
 ## API Endpoints
 
-The API documentation is available at `/api/docs/` when the application is running.  This is configured in app\app\urls.py.
+The API documentation is available at `/api/docs/` when the application is running.  This is configured in [app/app/urls.py](app/app/urls.py).
